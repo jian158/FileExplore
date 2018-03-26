@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gridviewac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_rowWeight="100"
+    tools:context="app.wei.fileexplore.Image.gridviewac">
+<GridView
+    android:layout_weight="7"
+    android:id="@+id/gridview"
+    android:numColumns="4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</GridView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btngroup"
+        android:layout_weight="92"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_weight="46"
+            android:id="@+id/hidecheckofimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="取消"/>
+        <Button
+            android:layout_weight="46"
+            android:onClick="DeleteImg"
+            android:id="@+id/deleteimg"
+            android:text="删除"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

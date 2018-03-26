@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:id="@+id/progresstitle"
+    android:textSize="12pt"
+    android:gravity="center"
+    android:text="@string/progressTitle"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/progress_alltask"
+        style="@style/MyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/progress_single"
+        style="@style/MyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+<Button
+    android:layout_marginTop="10dp"
+    android:text="完成"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/bar_progress"
+        android:layout_width="match_parent"
+        android:max="100"
+        android:layout_height="wrap_content" />
+<EditText
+    android:layout_below="@id/bar_progress"
+    android:id="@+id/edit_search"
+    android:layout_width="match_parent"
+    android:background="@drawable/edit_search"
+    android:layout_height="40dp" />
+    <ListView
+        android:layout_below="@id/edit_search"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/Lv_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TableRow>
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="搜索"/>
+            <Button
+                android:id="@+id/btn_stopsearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="停止搜索"
+                />
+            <Button
+                android:id="@+id/close_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

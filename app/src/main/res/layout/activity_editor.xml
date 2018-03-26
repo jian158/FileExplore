@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.wei.fileexplore.Editor.EditorAc">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <app.wei.fileexplore.Editor.Editor
+                android:background="@null"
+                android:id="@+id/editor"
+                android:gravity="start"
+                android:hint="Please"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                tools:ignore="LabelFor" />
+        </ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_marginBottom="50dp"
+            android:id="@+id/Lv_pathselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <TableRow>
+            <Button
+                android:id="@+id/okadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认"/>
+            <Button
+                android:id="@+id/canceladd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"/>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
